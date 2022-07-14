@@ -1,16 +1,16 @@
 import './App.css';
 
 const App = () => {
-  const born = 1997;
-
-  const checkAge = (data) => {
-    const hasil = 2022 - data;
-    return hasil;
-  }
+  const cars = ['Ayla', 'Agya', 'Sigra', 'Cayla'];
 
   return (
     <div>
-      <h1>Usia saya adalah {checkAge(born)} </h1>
+        <h1>Keluarga Astra</h1>
+        {
+          cars.map(item => 
+            <h1>{item}</h1>
+          )
+        }
     </div>
   )
 };
