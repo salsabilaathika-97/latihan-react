@@ -1,24 +1,12 @@
 import './App.css';
-import Header from './components/Header';
-import Body from './components/Body';
-import Footer from './components/Footer';
 
 const App = () => {
-  const myInfo = {
-    name: 'Salsa',
-    address: 'Banjarmasin',
-    status: 'Belum Menikah',
-    age: '25'
-  }
+  const cars = ['Ayla', 'Agya', 'Cayla', 'Sigra'];
+
   return (
     <div>
-      <Header />
-      <Body />
-      <h2>Nama saya adalah {myInfo.name}</h2>
-      <h2>Alamat saya adalah {myInfo.address}</h2>
-      <h2>Status saya adalah {myInfo.status}</h2>
-      <h2>Umur saya adalah {myInfo.age}</h2>
-      <Footer />
+      <h1>Mobil five seaters adalah {cars[0]} dan {cars[1]}</h1>
+      <h1>Mobil seven seaters adalah {cars[2]} dan {cars[3]}</h1>
     </div>
   )
 };
